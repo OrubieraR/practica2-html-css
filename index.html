@@ -92,40 +92,40 @@
 
         <section id="contact">
             <h3>Contacto</h3>
-            <form action="/register" novalidate method="POST">
+            <form action="/register" method="POST">
                 <div class="formInput">
-                    <label for="name">name</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="John" required>
 
                 </div>
 
                 <div class="formInput">
-                    <label for="surname">surname</label>
-                    <input type="text" id="surname" name="surname" required>
+                    <label for="surname">Apellidos</label>
+                    <input type="text" id="surname" name="surname" placeholder="Doe" required>
 
                 </div>
 
                 <div class="formInput">
-                    <label>phone</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone" placeholder="666 543 210" pattern="(\+34|0034|34)?[ -]*(6|7)[ -]*([0-9][ -]*){8}" required>
 
                 </div>
 
                 <div class="formInput">
                     <label for="email">email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="direccion@beerusmail.com" required>
 
                 </div>
 
                 <div class="formInput">
                     <label for="detalles"></label>
-                    <textarea name="detalles" id="detalles" cols="30" rows="10"></textarea>
+                    <textarea name="detalles" id="detalles" cols="30" rows="10" placeholder="Explícame por qué no debería destruir tu planeta"></textarea>
 
                 </div>
                 <div class="formInput">
-                    <label for="rrss">Twitter account</label>
+                    <label for="tagG">Github account</label>
                     <!-- Al poner el title en el input  -->
-                    <input type="text" id="rrss" name="rrss" pattern="^@[^\s]+" title="El formato válido es del tipo @keepcoding" required>
+                    <input type="text" id="tagG" name="tagG" pattern="^@[^\s]+" title="El formato válido es del tipo @keepcoding" placeholder="@taggithub" required>
 
                 </div>
                 
