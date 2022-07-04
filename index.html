@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beerus</title>
+
+    <!-- Links CSS and reset styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="name">
+            <h1>Beerus</h1>
+        </div>
+        <div class="navElements">
+            <ul>
+                <li><a href="#project">Proyectos</a></li>
+                <li><a href="#skills">Competencias</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <figure class="">
+            <picture>
+                <source>
+
+                <img src="" alt="">
+            </picture>
+        </figure>
+        <section>
+            <h2>Beerus Personal info</h2>
+        </section>
+    </header>
+
+    <main class="mainContainer">
+        <section id="project">
+            <div class="carouselCont">
+                <div id="slide1" class="sliderC">
+                    <p>contenido temp</p>   
+                </div>
+                <div id="slide2" class="sliderC">
+                    <p>contenido temp</p>
+                </div>
+                <div id="slide3" class="sliderC">
+                    <p>contenido temp</p>  
+                </div>
+            </div>
+            <div class="controlDots">
+                <ul>
+                    <li class="dots"></li>
+                    <li class="dots"></li>
+                    <li class="dots"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h3>Competencias</h3>
+            <div class="skillsBC">
+                <div class="skillD">
+                    <p class="skillT">Habilidad</p>
+                    <div class="progressC">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="skillD">
+                    <p class="skillT">Destreza</p>
+                    <div class="progressC">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="skillD">
+                    <p class="skillT">Habilidades sociales</p>
+                    <div class="progressC">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="skillD">
+                    <p class="skillT">Fuerza</p>
+                    <div class="progressC">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3>Contacto</h3>
+            <form action="/register" novalidate method="POST">
+                <div class="formInput">
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" required>
+
+                </div>
+
+                <div class="formInput">
+                    <label for="surname">surname</label>
+                    <input type="text" id="surname" name="surname" required>
+
+                </div>
+
+                <div class="formInput">
+                    <label>phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                </div>
+
+                <div class="formInput">
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" required>
+
+                </div>
+
+                <div class="formInput">
+                    <label for="detalles"></label>
+                    <textarea name="detalles" id="detalles" cols="30" rows="10"></textarea>
+
+                </div>
+                <div class="formInput">
+                    <label for="rrss">Twitter account</label>
+                    <!-- Al poner el title en el input  -->
+                    <input type="text" id="rrss" name="rrss" pattern="^@[^\s]+" title="El formato válido es del tipo @keepcoding" required>
+
+                </div>
+                
+                <button type="submit" value="send">Enviar</button>
+            </form>
+        </section>
+            
+    </main>
+
+    <footer class="footer">
+        <ul>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"></a> Instagram</li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"></a> Twitter</li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"></a> Youtube</li>
+        </ul>
+    </footer>
+</body>
+</html>
