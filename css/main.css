@@ -5,6 +5,7 @@
     --backgroundCSoft:#f3f3f3;
     --backGC:#ffb22e;
     --titleTip: 'Boogaloo', cursive;
+    --fillbar:0%;
 
     /*Global styles*/
     font-size: 16px;
@@ -65,7 +66,7 @@ h3{
     align-content: space-between;
     border-radius: 4px;
     border:1px solid #dedede;
-    margin: 20px 0;
+    margin: 20px 0 30px 0;
     /*padding: 10px 4px;*/
     background-color:#fff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -104,6 +105,10 @@ h3{
 .header .card .profileI li h4{
     font-weight: 700;
     margin-right: 4px;
+}
+
+.mainContent section{
+    margin-bottom: 30px;
 }
 
 
@@ -145,3 +150,116 @@ h3{
     width: 100%;
     height: 100%;
 }
+
+/*Progress bars*/
+
+/*Progress classes*/
+.prog5{
+    --fillbar:5%;
+}
+.prog10{
+    --fillbar:10%;
+}
+.prog15{
+    --fillbar:15%;
+}
+.prog20{
+    --fillbar:20%;
+}
+.prog25{
+    --fillbar:25%;
+}
+.prog30{
+    --fillbar:30%;
+}
+.prog35{
+    --fillbar:35%;
+}
+.prog40{
+    --fillbar:40%;
+}
+.prog45{
+    --fillbar:45%;
+}
+.prog50{
+    --fillbar:50%;
+}
+.prog55{
+    --fillbar:55%;
+}
+
+.prog60{
+    --fillbar:60%;
+}
+.prog65{
+    --fillbar:65%;
+}
+
+.prog70{
+    --fillbar:70%;
+}
+.prog75{
+    --fillbar:75%;
+}
+
+.prog80{
+    --fillbar:80%;
+}
+.prog85{
+    --fillbar:85%;
+}
+
+.prog90{
+    --fillbar:90%;
+}
+.prog95{
+    --fillbar:95%;
+}
+
+.prog100::after{
+    --fillbar:100%;
+}
+
+/*Progress bars styles*/
+
+#skills .skillsBC{
+    padding: 0 20px;
+}
+
+#skills .progressC{
+    width: 80%;
+    overflow: hidden;
+}
+
+#skills .progressC .progress,
+#skills .progressC .progress::after{
+    position:relative;
+    width:100%;
+    background-color: var(--backgroundCSoft);
+    height: 8px;
+    
+}
+
+#skills .progressC .progress::after{
+    content:'';
+    position:absolute;
+    left: -100%;
+    overflow: hidden;
+    background-color: var(--backGC);
+    transition: all 2s ease-in-out .2s; 
+    animation: fillingbars 4s forwards;
+}
+
+#skills .skillD{
+    margin-bottom:14px;
+}
+#skills .skillT{
+    margin-bottom:4px;
+}
+
+@keyframes fillingbars {
+    to{
+        transform:translateX(var(--fillbar));
+    }
+}
+
