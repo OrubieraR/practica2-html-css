@@ -167,7 +167,7 @@ h3{
     background-color: #00000057;
 }
 
-.slideCnt {
+#project .slideCnt {
     position:absolute;
     top:0;
     bottom:0;
@@ -185,6 +185,10 @@ h3{
     text-align: center;
     line-height: 40px;
     padding: 0 10px;
+}
+
+#project .sliderC img{
+    min-width:100%;
 }
 
 #project .controlDots ul{
