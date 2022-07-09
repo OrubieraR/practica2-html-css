@@ -3,6 +3,7 @@
     /*Variables*/
     --primaryC:#494949;
     --backgroundCSoft:#f3f3f3;
+    --containerBC:#fdfdfd;
     --backGC:#ffb22e;
     --titleTip: 'Boogaloo', cursive;
     --fillbar:0%;
@@ -18,7 +19,7 @@ body{
 }
 
 #container{
-    background-color:#fdfdfd;
+    background-color:var(--containerBC);
 }
 
 h3{
@@ -27,6 +28,29 @@ h3{
     font-size: 1.2rem;
     text-transform: uppercase;
     margin-bottom: 14px;
+}
+
+.padding-0-20{
+    padding:0 20px;
+}
+
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.boton{
+    padding: 8px 20px;
+    font-weight: bold;
+    background-color: var(--backGC);
+    color: var(--primaryC);
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid #b0b0b0;
 }
 
 /*Navbar*/
@@ -108,7 +132,11 @@ h3{
 }
 
 .mainContent section{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.mainContent section:last-of-type{
+    margin-bottom: 0;
 }
 
 
@@ -222,9 +250,9 @@ h3{
 
 /*Progress bars styles*/
 
-#skills .skillsBC{
+/*#skills .skillsBC{
     padding: 0 20px;
-}
+}*/
 
 #skills .progressC{
     width: 80%;
@@ -263,3 +291,64 @@ h3{
     }
 }
 
+/*Formulario styles*/
+#contact{
+    background:var(--backgroundCSoft);
+    padding: 20px 0;
+}
+
+#contact .formInput{
+    margin-bottom:14px;
+}
+
+#contact .formInput label{
+    margin-right:4px;
+}
+#contact .formInput label::after{
+    content:':';
+}
+
+#detalles{
+    margin-top: 10px;
+    min-width: 90%;
+    min-height: 135px;
+    padding: 8px 10px;
+}
+
+.formInput fieldset{
+    padding: 10px;
+    border: 2px solid #888888;
+    margin: 20px 0;
+    background-color:var(--containerBC);
+}
+
+.formInput fieldset legend{
+    padding-inline: 8px;
+}
+
+#contact button{
+    margin: 20px 0 12px 0;
+}
+
+/*Footer styles*/
+.footer{
+    background-color:var(--primaryC);
+}
+
+.footer .containerF{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    padding: 20px 0;
+}
+
+.footer a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}

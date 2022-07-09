@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+
     <!-- Fonts -->
         <!-- Boogaloo titles -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -109,7 +112,7 @@
 
             <section id="skills">
                 <h3>Competencias</h3>
-                <div class="skillsBC">
+                <div class="skillsBC padding-0-20">
                     <div class="skillD">
                         <p class="skillT">Empatía:</p>
                         <div class="progressC">
@@ -139,55 +142,72 @@
 
             <section id="contact">
                 <h3>Contacto</h3>
-                <form action="/register" method="POST">
-                    <div class="formInput">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" name="name" placeholder="John" required>
+                <div class="padding-0-20">
+                    <form action="/register" method="POST">
+                        <div class="formInput">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="John" required>
 
-                    </div>
+                        </div>
 
-                    <div class="formInput">
-                        <label for="surname">Apellidos</label>
-                        <input type="text" id="surname" name="surname" placeholder="Doe" required>
+                        <div class="formInput">
+                            <label for="surname">Apellidos</label>
+                            <input type="text" id="surname" name="surname" placeholder="Doe" required>
 
-                    </div>
+                        </div>
 
-                    <div class="formInput">
-                        <label for="phone">Teléfono</label>
-                        <input type="tel" id="phone" name="phone" placeholder="666 543 210" pattern="(\+34|0034|34)?[ -]*(6|7)[ -]*([0-9][ -]*){8}" required>
+                        <div class="formInput">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" placeholder="666 543 210" pattern="(\+34|0034|34)?[ -]*(6|7)[ -]*([0-9][ -]*){8}" required>
 
-                    </div>
+                        </div>
 
-                    <div class="formInput">
-                        <label for="email">email</label>
-                        <input type="email" id="email" name="email" placeholder="direccion@beerusmail.com" required>
+                        <div class="formInput">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="direccion@beerusmail.com" pattern='/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z{2,}))$/' required>
 
-                    </div>
+                        </div>
 
-                    <div class="formInput">
-                        <label for="detalles"></label>
-                        <textarea name="detalles" id="detalles" cols="30" rows="10" placeholder="Explícame por qué no debería destruir tu planeta"></textarea>
+                        <div class="formInput">
+                            <fieldset>
+                                <legend>Elige a tu favorito (No sientas presión):</legend>
+                                <input type="radio" name="chooseFav" id="vegeta">
+                                <label for="vegeta">Vegeta</label>
+    
+                                <input type="radio" name="chooseFav" id="beerus">
+                                <label for="beerus">Beerus</label>
+    
+                                <input type="radio" name="chooseFav" id="goku">
+                                <label for="goku">Goku</label>
+                            </fieldset>
+                        </div>
 
-                    </div>
-                    <div class="formInput">
-                        <label for="tagG">Github account</label>
-                        <!-- Al poner el title en el input  -->
-                        <input type="text" id="tagG" name="tagG" pattern="^@[^\s]+" title="El formato válido es del tipo @keepcoding" placeholder="@taggithub" required>
+                        <div class="formInput">
+                            <label for="detalles">Añade un mensaje de súplica y hazme la pelota</label>
+                            <textarea name="detalles" id="detalles" maxlength="180" placeholder="Explícame por qué no debería destruir tu planeta"></textarea>
 
-                    </div>
-                    
-                    <button type="submit" value="send">Enviar</button>
-                </form>
+                        </div>
+                        <div class="formInput">
+                            <label for="tagG">Cuenta de Github</label>
+                            <!-- Al poner el title en el input  -->
+                            <input type="text" id="tagG" name="tagG" pattern="^@[^\s]+" title="El formato válido es del tipo @githubname" placeholder="@taggithub" required>
+
+                        </div>
+                        <div class="center">
+                            <button class="boton" type="submit" value="send">Enviar</button>
+                        </div>
+                    </form>
+                </div>
             </section>
                 
         </main>
 
         <footer class="footer">
-            <ul>
-                <li><a href="#" target="_blank" rel="noopener noreferrer"></a> Instagram</li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer"></a> Twitter</li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer"></a> Youtube</li>
-            </ul>
+            <div class="containerF">
+                <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Youtube</a> 
+            </div>
         </footer>
     </div>
 </body>
