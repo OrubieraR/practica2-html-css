@@ -89,16 +89,22 @@
 
         <main class="mainContent">
             <section id="project">
-                <h3>Filmografía</h3>
+                <h3>Siguientes objetivos</h3>
                 <div class="carouselCont">
                     <div id="slide1" class="sliderC">
-                        <p>contenido temp 1</p>   
+                        <div class="dark"></div>
+                        <img src="img/slider/kame-house-400x300.jpg" alt="La Casa Kame de Dragon Ball">
+                        <p class="slideCnt">La casa Kame.</p>   
                     </div>
                     <div id="slide2" class="sliderC">
-                        <p>contenido temp 2</p>
+                        <div class="dark"></div>
+                        <img src="img/slider/planet-400x300.jpg" alt="Planeta pequeño de Dragon Ball">
+                        <p class="slideCnt">Este planeta tan mono. ¡No me gusta!</p>
                     </div>
                     <div id="slide3" class="sliderC">
-                        <p>contenido temp 3</p>  
+                        <div class="dark"></div>
+                        <img src="img/slider/house-400x300.jpg" alt="Una casa de gente normal en Dragon Ball">
+                        <p class="slideCnt">La casa de esta pobre gente.</p>  
                     </div>
                 </div>
                 <div class="controlDots">
@@ -145,40 +151,50 @@
                 <div class="padding-0-20">
                     <form action="/register" method="POST">
                         <div class="formInput">
-                            <label for="name">Nombre</label>
+                            <label for="name">Nombre:</label>
                             <input type="text" id="name" name="name" placeholder="John" required>
 
                         </div>
 
                         <div class="formInput">
-                            <label for="surname">Apellidos</label>
+                            <label for="surname">Apellidos:</label>
                             <input type="text" id="surname" name="surname" placeholder="Doe" required>
 
                         </div>
 
                         <div class="formInput">
-                            <label for="phone">Teléfono</label>
+                            <label for="phone">Teléfono:</label>
                             <input type="tel" id="phone" name="phone" placeholder="666 543 210" pattern="(\+34|0034|34)?[ -]*(6|7)[ -]*([0-9][ -]*){8}" required>
 
                         </div>
 
                         <div class="formInput">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="direccion@beerusmail.com" pattern='/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z{2,}))$/' required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="direccion@beerus.com" pattern='/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z{2,}))$/' required>
 
                         </div>
 
                         <div class="formInput">
                             <fieldset>
                                 <legend>Elige a tu favorito (No sientas presión):</legend>
-                                <input type="radio" name="chooseFav" id="vegeta">
-                                <label for="vegeta">Vegeta</label>
+                                
+                                <div class="contRd">
+                                    <div class="chooseLyr">
+                                        <input type="radio" name="chooseFav" id="vegeta">
+                                        <label for="vegeta">Vegeta</label>
+                                    </div>
     
-                                <input type="radio" name="chooseFav" id="beerus">
-                                <label for="beerus">Beerus</label>
-    
-                                <input type="radio" name="chooseFav" id="goku">
-                                <label for="goku">Goku</label>
+                                    <div class="chooseLyr">
+                                        <input type="radio" name="chooseFav" id="beerus">
+                                        <label for="beerus">Beerus</label>
+                                    </div>
+                                    
+                                    <div class="chooseLyr">
+                                        <input type="radio" name="chooseFav" id="goku">
+                                        <label for="goku">Goku</label>
+                                    </div>
+                                </div>
+
                             </fieldset>
                         </div>
 
@@ -188,7 +204,7 @@
 
                         </div>
                         <div class="formInput">
-                            <label for="tagG">Cuenta de Github</label>
+                            <label for="tagG">Cuenta de Github:</label>
                             <!-- Al poner el title en el input  -->
                             <input type="text" id="tagG" name="tagG" pattern="^@[^\s]+" title="El formato válido es del tipo @githubname" placeholder="@taggithub" required>
 
