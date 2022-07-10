@@ -1,0 +1,19 @@
+/*Screens bigger than 767px*/
+@media only screen and (min-width: 768px) {
+    .mainContent section {
+        margin-bottom: 80px;
+    }
+
+    .mainContent section > h3{
+        font-size:2.5rem;
+    }
+
+    .padding-0-20 {
+        padding: 0 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+  }

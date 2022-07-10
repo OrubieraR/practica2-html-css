@@ -51,12 +51,23 @@ h3{
     border-radius: 4px;
     border: none;
     border: 1px solid #b0b0b0;
+    text-decoration: none;
+}
+
+#imgCnt{
+    display:none;
 }
 
 /*Navbar*/
 .navbar{
     background-color:var(--backGC);
     padding:10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
 }
 
 .navbar h1{
@@ -65,6 +76,11 @@ h3{
     font-family: var(--titleTip);
     text-transform: uppercase;
     font-size: 1.75rem;
+}
+
+.navbar .fa-home{
+    font-size: 28px;
+    color:#000;
 }
 
 .navbar .namePrfl{
@@ -83,6 +99,15 @@ h3{
     align-items: center;
 }
 
+.header section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
 .header .card{
     display: flex;
     flex-direction: column;
@@ -90,7 +115,7 @@ h3{
     align-content: space-between;
     border-radius: 4px;
     border:1px solid #dedede;
-    margin: 20px 0 30px 0;
+    margin: 20px 0;
     /*padding: 10px 4px;*/
     background-color:#fff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -129,6 +154,10 @@ h3{
 .header .card .profileI li h4{
     font-weight: 700;
     margin-right: 4px;
+}
+
+#btnDtls{
+    margin: 8px 0 40px;
 }
 
 .mainContent section{
@@ -390,4 +419,74 @@ h3{
 
 .footer a:hover{
     text-decoration: underline;
+}
+
+/*Details page*/
+
+/*Grid*/
+.details{
+    margin:20px 0;
+}
+
+.details .grdCnt{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 50px 20px;
+}
+
+
+/*Rest of styles*/
+.grdCnt .items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.grdCnt .items img{
+    border:2px solid var(--primaryC);
+    border-radius:100%;
+    max-width: 100%;
+    background-color:#969696;
+}
+
+.grdCnt .items h4{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 4px;
+}
+
+/*404 styles*/
+#cont404,
+#cont500{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin:30px 0
+}
+
+#cont404 h1,
+#cont500 h1{
+    margin-bottom: 30px;
+    font-family:var(--titleTip);
+    font-size:3rem;
+    text-align:center;
+}
+
+#cont404 h2,
+#cont500 h2{
+    margin-top:40px;
+    font-size: 1.5rem;
+    text-align:center;
+}
+
+#cont404 img,
+#cont500 img{
+    max-width: 100%;
 }
