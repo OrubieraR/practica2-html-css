@@ -1,5 +1,23 @@
 /*Screens bigger than 767px*/
 @media only screen and (min-width: 768px) {
+    :root{
+        /*Variables*/
+        --primaryC:#494949;
+        --backgroundCSoft:#f3f3f3;
+        --containerBC:#fdfdfd;
+        --backGC:#ffb22e;
+        --titleTip: 'Boogaloo', cursive;
+        --fillbar:0%;
+    
+        /*Global styles*/
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    /*Generic styles*/
+    html {
+        scroll-behavior: smooth;
+    }
     .mainContent section {
         margin-bottom: 80px;
     }
@@ -8,12 +26,88 @@
         font-size:2.5rem;
     }
 
-    .padding-0-20 {
+    /*Nav bar*/
+    .mblElements{
+        display:none;
+    }
+    .navElements {
+        display:inherit;
+    }
+
+    .navElements a{
+        font-size: 1.2rem;
+        margin:0 8px;
+        text-decoration: none;
+        color:#000;
+    }
+
+    .navElements a:hover{
+        color:#fff;
+        transition: all .4s ease-in-out;
+    }
+
+    /*Header styles*/
+    .header .card {
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .header .card img {
+        border: 0;
+        border-radius:unset;
+        max-width: 90%;
+        background-color:unset;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .header .card .profileI h3{
+        font-size:1.5rem;
+    }
+
+    .header .card .profileI {
+        border-top:unset;
+    }
+
+    .header .card .profileI h4,
+    .header .card .profileI  p{
+        font-size: 1.2rem;
+    }
+
+
+    /*Contact form styles*/
+    #contact .padding-0-20 {
         padding: 0 80px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
+    #imgCnt{
+        display:inherit;
+    }
+
+    /*Details page*/
+    .grdCnt .items img {
+        border: unset;
+        border-radius:unet;
+        max-width: 100%;
+        background-color:unset;
+    }
+
+    .details .grdCnt {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .grdCnt .items {
+        background: #f1f1f1;
+        padding: 20px 0;
+    }
+
+    .grdCnt .items h4 {
+        padding-top: 14px;
+        border-top: 2px solid #dfdfdf;
+        width: 100%;
+        text-align: center;
+    }
 
   }

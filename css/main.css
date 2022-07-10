@@ -54,18 +54,19 @@ h3{
     text-decoration: none;
 }
 
-#imgCnt{
+#imgCnt,
+.xtrNfo{
     display:none;
 }
 
 /*Navbar*/
 .navbar{
     background-color:var(--backGC);
-    padding:10px 0;
+    padding:10px 18px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
 }
@@ -90,6 +91,65 @@ h3{
 .navElements{
     display: none;
 }
+
+/*Hamburguer*/
+.respmenu a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    max-width: 200px;
+  }
+
+  .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 40px;
+    pointer-events: none;
+  }
+  
+  .respmenu input[type="checkbox"] {
+    opacity: 0;
+  }
+  
+  .respmenu {
+    position: relative;
+    background:var(--backGC);
+    min-height: 48px;
+  }
+  
+  .respmenu nav {
+    display: none;
+    position:absolute;
+    top:58px;
+    right:0;
+    background-color:var(--backGC);
+    
+  }
+  
+  .respmenu input:checked ~ nav {
+    display: block;
+  }
+  
+  .respmenu input:checked ~ .fa-bars {
+    display: none;
+  }
+  
+  .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+
+
+
 
 /*Header*/
 .header{

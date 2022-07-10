@@ -36,11 +36,23 @@
                 <h1>Beerus</h1>
             </div>
             <div class="navElements">
-                <ul>
-                    <li><a href="#project">Proyectos</a></li>
-                    <li><a href="#skills">Competencias</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
+                <a href="#project">Proyectos</a>
+                <a href="#skills">Competencias</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <div class="mblElements">
+                <div class="respmenu">
+                    <input type="checkbox">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times"></i>
+                    <nav>
+                      <ul>
+                        <li><a href="#project">Proyectos</a></li>
+                        <li><a href="#skills">Competencias</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                      </ul>
+                    </nav>
+                  </div>
             </div>
         </nav>
 
@@ -48,7 +60,10 @@
             <section>
                 <div class="card">
                     <figure>
-                        <img src="img/beerus-profile-100.png" alt="Imagen del dios Beerus">
+                        <picture>
+                            <source media="(min-width: 767px)" srcset="img/beerus-300px.png">
+                            <img src="img/beerus-profile-100.png" alt="Imagen del dios Beerus">
+                        </picture>
                     </figure>
                     <div class="profileI">
                         <h3>Detalles de perfil:</h3>
@@ -224,8 +239,10 @@
                         </div>
                     </form>
 
-                    <div>
-                        
+                    <div id="imgCnt">
+                        <figure>
+                            <img src="/img/wish-cnt.png" alt="Whish a la derecha del formulario de contacto">
+                        </figure>
                     </div>
                 </div>
             </section>
