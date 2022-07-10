@@ -5,8 +5,8 @@
     * Tiene como partes principales:
         * Navbar
         * Header
-        * Main con varios section para el slider, las habilidades y el formulario
-        * Footer
+        * Main: con varios section para el slider, las habilidades y el formulario
+        * Footer:
     En el index, tanto en la ficha del personaje como en el formulario de contacto se ha modificado la disposición y maquetación para desktop. También, usando la etiqueta picture se han usado imágenes mayores, aprovechando la mayor cantidad de espacio disponible.
 
 * detail.html
